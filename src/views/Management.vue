@@ -1,5 +1,5 @@
 <template>
     <div>
-        aa
+        aamasi
     </div>
 </template>
