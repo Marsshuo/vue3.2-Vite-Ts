@@ -3,9 +3,14 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        name: 'Management',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Management.vue')
+        name: 'Home',
+        component: () => import(/* webpackChunkName: "about" */ '../views/home.vue')
     },
+    {
+        path: '/management',
+        name: 'Management',
+        component: () => import(/* webpackChunkName: "about" */ '../views/management.vue')
+    }
 ]
 // const routerHistory = createWebHistory();
 // const router = createRouter({
@@ -14,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
 //         {
 //             path: '/',
 //             name: 'Management',
-//             component: () => import(/* webpackChunkName: "about" */ '../views/Management.vue')
+//             component: () => import(/* webpackChunkName: "about" */ '../views/management.vue')
 //         }
 //     ]
 // });

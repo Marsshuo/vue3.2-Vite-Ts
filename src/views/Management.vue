@@ -9,6 +9,8 @@
         <p v-if="show">DefineEmitsChildren</p>
         <br />
         4<DefineExposeChildren ref="childRef"></DefineExposeChildren>
+        <br />
+        <n-button type="primary">naive-ui</n-button>
     </div>
 </template>
 <script setup lang="ts">
@@ -16,6 +18,8 @@ import { ref, reactive, onMounted } from 'vue'
 import DefineEmitsChildren from '../components/DefineEmitsChildren.vue'
 import DefinePropsChildren from '../components/DefinePropsChildren.vue'
 import DefineExposeChildren from '../components/DefineExposeChildren.vue'
+import { NButton } from 'naive-ui'
+
 // DefinePropsChildren 父传子
 const name = ref('')
 name.value = '李四'
